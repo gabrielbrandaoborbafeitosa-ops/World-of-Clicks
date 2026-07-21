@@ -23,11 +23,3 @@ function maisextras(extras, pt) {
         alert("Não há pontos suficientes.");
     }
 }
-function converter() {
-localStorage.setItem(
-    "pontos",
-    Number(localStorage.getItem("pontos") || 0) +
-    Number(localStorage.getItem("extras") || 0)
-);
-document.getElementById("converter").disabled = true;
-}
