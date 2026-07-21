@@ -29,30 +29,5 @@ localStorage.setItem(
     Number(localStorage.getItem("pontos") || 0) +
     Number(localStorage.getItem("extras") || 0)
 );
-
-    const botao = document.getElementById("converter");
-
-const fimEspera = localStorage.getItem("fimEspera");
-
-if (fimEspera && Date.now() < Number(fimEspera)) {
-    botao.disabled = true;
-
-    setTimeout(() => {
-        botao.disabled = false;
-        localStorage.removeItem("fimEspera");
-    }, Number(fimEspera) - Date.now());
-
-} else {
-    botao.disabled = false;
-
-    const umaSemana = 7 * 24 * 60 * 60 * 1000;
-    localStorage.setItem("fimEspera", Date.now() + umaSemana);
-
-    botao.disabled = true;
-
-    setTimeout(() => {
-        botao.disabled = false;
-        localStorage.removeItem("fimEspera");
-    }, umaSemana);
-}
+document.getElementById("converter").disabled = true;
 }
