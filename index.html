@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Clicks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="pontos()" id="botao">0</button>
+    <br>
+    <strong id="strongextras">Extras: 0</strong>
+    <br>
+    <button onclick="maisextras(100, 50)">+100 extras (Requer 50 pontos)</button>
+      <button onclick="maisextras(500, 300)">+500 extras (Requer 300 pontos)</button>
+       <button onclick="maisextras(1000, 500)">+1.000 extras (Requer 500 pontos)</button>
+        <button onclick="maisextras(10000, 5000)">+10.000 extras (Requer 5.000 pontos)</button>
+        <br>
+        <button onclick="localStorage.setItem('pontos', pontos + extrasvar);">Converter extras para mais pontos</button>
+    <script src="script.js"></script>
+</body>
+</html>
