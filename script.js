@@ -23,6 +23,9 @@ function maisextras(extras, pt) {
         alert("Não há pontos suficientes.");
     }
 }
+/*
 function converter() {
     localStorage.setItem('pontos', pontos + extrasvar);
 }
+    COMING SOON
+    */
